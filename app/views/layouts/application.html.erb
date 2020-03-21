@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PortfolioSite</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <%# <header>
+    <div class="header-wrap">
+      <div class="covers_header-top-logo">
+        <a href="/covers" class="covers_header-top-logo-a"><img src="/img/portfolio_top_logo05.png" width="150"></a>
+      </div>
+      <nav>
+        <div>
+          <ul class="covers_header-nav_ul">
+            <a href="#portfolio" class="covers_header-nav_li"><li>ポートフォリオ</li></a>
+            <a href="#profile" class="covers_header-nav_li"><li>プロフィール</li></a>
+            <a href="#study_group" class="covers_header-nav_li"><li>勉強会</li></a>
+            <a href="#failure_story" class="covers_header-nav_li"><li>失敗談</li></a>
+            <a href="#activity" class="covers_header-nav_li"><li>アクティビティ</li></a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="covers_header-background-image">
+      <img src="/img/portfolio_site-background-image02.png" width="450" height="450">
+    </div>
+  </header> %>
+    <%= yield %>
+  <%# <footer>
+    <div class="covers_footer">
+      <a href="#"><h3>トップに戻る</h3></a>
+      <p><img src="/img/portfolio_top_logo05.png" height="60"></p>
+    </div>
+  </footer> %>
+  </body>
+</html>
