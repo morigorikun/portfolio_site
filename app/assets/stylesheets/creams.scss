@@ -1,0 +1,528 @@
+// Place all the styles related to the creams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.top_box1_fixed {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 100%;
+}
+
+.top_box1 h1:hover {
+  opacity: .6;
+}
+
+.top_box1 h2 {
+  padding-top: 60px;
+}
+
+.top_box1 h3 {
+  text-align: center;
+  background: #F7DADC;
+}
+
+.box1_float {
+  display: flex;
+	justify-content: center;
+  background: #F7DADC;
+}
+
+.box1_float_left {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.box1_float_right {
+  padding-top: 50px;
+}
+
+.top_box2_color1 {
+  width: 1000px;
+  background: #22A0F2;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.top_box2 h1 {
+  text-align: center;
+}
+
+.top_box2 h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.top_box2_flex {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+}
+
+.top_box2 h3 {
+  padding: 10px;
+}
+
+.top_box2 h4 {
+  text-align: center;
+}
+
+.top_box3 {
+  background: #F7DADC;
+  padding-bottom: 30px;
+}
+
+.top_box3 h1 {
+  text-align: center;
+}
+
+.top_box3_flex {
+	display: flex;
+	justify-content: center;
+}
+
+.top_box3_flex_right {
+	padding: 40px;	
+}
+
+.top_box3_flex_right p {
+	padding: 30px 0;
+	color: #721913;
+}
+
+.top_box3 h6 {
+  text-align: center;
+  background: #fff;
+  padding-bottom: 30px;
+}
+
+.top_box4 h1 {
+  text-align: center;
+}
+
+.top_box4 h3 {
+	background: #F7DADC;
+}
+
+.top_box4_flex {
+	display: flex;
+	justify-content: center;
+}
+
+.top_box4_flex h2 {
+	padding: 40px;
+}
+
+.top_box5 {
+	background: #F7DADC;
+	padding-top: 50px;
+}
+
+.top_box5 h1 {
+  width: 1000px;
+  margin: auto;
+}
+
+.top_box5_type1 > p {
+	width: 950px;
+	background: #E7A6B5;
+	color: #fff;
+	margin: auto;
+	padding: 10px;
+  text-align: center;
+}
+
+.top_box5_type1 {
+	width: 1000px;
+	margin: auto;
+	padding-top: 10px;
+	background: #fff;
+}
+
+.top_box5_type1 h2 {
+	padding: 20px 20px 20px 100px; 
+}
+
+.top_box5_type1_wrap {
+	display: flex;
+}
+
+.top_box5_type1_wrap p {
+	color: #721913;
+	padding-top: 10px;
+}
+
+.top_box5_type1_wrap_left {
+	flex: 1;
+}
+
+.top_box5_type1_wrap_left h3 {
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.top_box5_type1_wrap_right {
+	flex: 2;
+	padding: 30px;
+}
+
+.top_box5_type1_wrap_right h4 {
+	border-left: 10px solid pink;
+	padding-left: 10px;
+}
+
+.top_box5_type2 {
+	width: 1000px;
+	margin: auto;
+	background: #fff;
+}
+
+.top_box5_type2 h2 {
+	padding: 20px 20px 20px 100px;
+}
+
+.top_box5_type2_wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.top_box5_type2_set {
+	display: flex;
+	padding-left: 10px;
+}
+
+.top_box5_type2_set_left h3 {
+	padding: 10px;
+}
+
+.top_box5_type2_set_right {
+	padding: 5px 20px;
+}
+
+.top_box5_type2_set_right h4 {
+	border-left: 10px solid pink;
+	padding-left: 10px;
+}
+
+.top_box5_type2_set_right p {
+	padding-top: 10px;
+}
+
+.top_box5_type3 {
+	padding: 30px 10px;;
+}
+
+.top_box5_type3 h2 {
+	padding: 0  0 30px 100px;
+}
+
+.top_box5_type3 h3 {
+  text-align: center;
+}
+
+.top_box6 {
+	padding-top: 40px;
+	padding-bottom: 50px;
+	background: #F7DADC;
+}
+
+.top_box6 h1 {
+  width: 1000px;
+  margin: auto;
+}
+
+.top_box6 h2 {
+	padding: 20px 20px 20px 100px;
+}
+
+.top_box6_wrap {
+	width: 1000px;
+	background: #fff;
+	padding-top: 10px;
+	margin: auto;
+}
+
+.top_box6_wrap > p {
+	padding: 10px;
+	margin: 0 10px;
+	background: #E7A6B5;
+	color: #fff;
+}
+
+.top_box6_set {
+	display: flex;
+}
+
+.top_box6_bottom_set {
+	display: flex;
+}
+
+.top_box6_set_left {
+	flex: 2;
+	margin: 20px;
+}
+
+.top_box6_set_left p {
+	padding-top: 10px;
+	margin-left: 50px;
+	color: #721913;
+}
+
+.top_box6_set_left h3 {
+	background: #D4BD86;
+	padding: 10px;
+	margin-left: 50px;
+}
+
+.top_box6_set_right {
+	flex: 1;
+	margin: 20px;
+}
+
+.top_box6_bottom_set {
+	margin: 30px 30px 30px 60px;
+	padding-bottom: 50px;
+}
+
+.top_box6_bottom_set h5 {
+	padding: 10px;
+}
+
+.top_box6_bottom_set p {
+	padding: 10px 10px 10px 30px;
+	color: #721913;
+}
+
+.top_box7 {
+	background: #F7DADC;
+}
+
+.top_box7_wrap > p {
+	background: #E7A6B5;
+	color: #fff;
+	padding: 10px;
+	margin: 0 10px;
+}
+
+.top_box7 h1 {
+	width: 1000px;
+	margin: auto;
+}
+
+.top_box7_wrap {
+	width: 1000px;
+	background: #fff;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	margin: 0 auto 90px;
+}
+
+.top_box7_set {
+	display: flex;
+	justify-content: center;
+}
+
+.top_box7_set_left {
+	flex: 1;
+	padding: 30px;
+}
+
+.top_box7_set_left h2 {
+	padding: 20px;
+	padding-left: 60px;
+}
+
+.top_box7_set_left p {
+	line-height: 1.5;
+	color: #721913;
+}
+
+.top_box7_set_right {
+	flex: 1;
+	padding: 60px 30px 30px;
+}
+
+.top_box7 h4 {
+	background: #fff;
+}
+
+.top_box7 h5,.top_box7 h6 {
+	background: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+.top_box8_set {
+	display: flex;
+	justify-content: center;
+}
+
+.top_box8 {
+	background: #F7DADC;
+}
+
+
+.top_box8_wrap h1 {
+	margin: auto;
+	padding-top: 50px;
+  text-align: center;
+}
+
+.top_box8_set_right h3 {
+	padding: 20px 0 0;
+}
+
+.top_box8_set_right h4 {
+	padding-top: 20px;
+}
+
+.top_box8_set_right h5 {
+	padding-top: 20px;
+}
+
+.top_box8 h6 {
+	margin-top: 50px;
+}
+
+.top_box9 {
+	width: 1000px;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+.top_box9 h2 {
+	padding-bottom: 20px;
+	border-bottom: 5px solid #22A0F2;
+}
+
+.top_box9_set {
+	display: flex;
+	padding-top: 20px;
+	margin-bottom: 80px;
+}
+
+.top_box9_set_left {
+	flex: 3;
+}
+
+.top_box9_set_left p {
+	padding-right: 10px;
+	color: #525252;
+}
+
+.top_box9_set_right {
+	flex: 2;
+}
+
+.top_box10 h1 {
+	background: #BA012B;
+	padding: 15px;
+  text-align: center;
+}
+
+.top_box10_set {
+	display: flex;
+	width: 1000px;
+	padding: 25px;
+	margin: auto;
+	border-bottom: 6px solid #BA012B;
+}
+
+.top_box10_set_left {
+	flex: 1;
+}
+
+.top_box10_set_left h2 {
+	margin: 20px;
+}
+
+.top_box10_set_right {
+	flex: 3;
+}
+
+.top_box10_set_right h3 {
+	margin: 20px;
+}
+
+.top_box10_set_right p {
+	width: 600px;
+	line-height: 1.8;
+	color: #525252;
+}
+
+.top_box10_set_under {
+	display: flex;
+	width: 1000px;
+	padding: 25px;
+	margin: auto;
+	justify-content: center;
+}
+
+.top_box10_set_under h4 {
+	margin: 20px 40px;
+}
+
+.top_box10 h5 {
+	padding: 50px;
+	margin-top: 40px;
+	background: #D4BD86;
+  text-align: center; 
+}
+
+.top_box10_text {
+	font-size: 11px;
+	padding: 30px;
+	margin: auto;
+	width: 800px;
+	color: #525252;
+}
+
+.top_box11 {
+	background: #F7D9DB;
+	margin-bottom: 60px;
+}
+
+.top_box11 h1 {
+	padding: 30px;
+  text-align: center; 
+}
+
+.top_box11_set {
+	display: flex;
+	width: 1000px;
+	margin: auto;
+	justify-content: center;
+}
+
+.top_box11_set_left {
+	padding: 20px;
+}
+
+.top_box11_set_right {
+	padding: 20px;
+}
+
+.top_box11_set_right h3 {
+	margin: 10px;
+}
+
+.top_box11_set_right h4 {
+	margin: 20px 10px;
+}
+
+.top_box11_set_right h5 {
+	margin: 10px;
+}
+
+footer {
+	background: red;
+	// margin-bottom: 500px;
+}
