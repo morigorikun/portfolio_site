@@ -56,7 +56,8 @@ header::after {
     color: red;
     // font-size: 13px;
     font-weight: bold;
-  }
+    // transition: .5s;
+}
 }
 .covers_header-background-image {
   // background: pink;
@@ -65,6 +66,10 @@ header::after {
   margin: auto;
   & img {
     padding-left: 40px;
+    animation-duration: 3s; 
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    // animation-direction: alternate;
   }
 }
 .covers_footer {
@@ -84,7 +89,12 @@ header::after {
     line-height: 60px;
     &:hover {
       opacity: .8;
-      background: #006;
+      background: #fff;
+      color: #000;
+      transition: 1.5s;
+      font-weight: bold;
+      // font-size: 20px;
+      text-shadow: 0px 5px 2px #000;
     }
   }
   & p {
