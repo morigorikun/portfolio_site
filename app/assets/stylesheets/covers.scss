@@ -1,14 +1,18 @@
+
 .covers_portfolio-wrap {
   width: 100%;
   background: rgb(236, 242, 242);
-  padding-bottom: 160px;
+  padding-bottom: 30px;
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
 .covers_portfolio-box {
-  // width: 1200px;
-  width: 80%;
-  // height: 100vh;
+  width: 90%;
+  padding: 30px;
   margin: auto ;
-  // background: pink;
   & h2 {
     color: rgb(6, 68, 238);
     font-size: 18px;
@@ -19,31 +23,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    // width: 1000px;
     margin: 0 auto;
-    // background: yellow;
-    // background: blue;
     &-box {
-      width: 45%;
-      // height: 100%;
-      // flex: 1;
-      // height: 540px;
+      width: 350px;
       background: #fff;
       margin: 10px 10px;
       padding-bottom: 10px;
       color: #333;
-      &:hover {
-        // opacity: .8;
-        // width: 100%;
-        // transition: .1s;
-        transform-origin: 50% 50%; //アニメーション開始地点を指定する
-        animation-name: big; //@keyframesで定義した名前を指定する
-        animation-duration: .5s; //アニメーション開始から終了までの時間を指定
-        animation-fill-mode: forwards; //アニメーション終了時の状態を固定する
-      }
-      &-img {
-        padding-left: 13px;
-      }
       & h3 {
         font-size: 24px;
         padding: 0 20px;
@@ -58,7 +44,6 @@
         line-height: 1.8;
       }
       &:hover {
-        // opacity: .8;
         cursor: pointer;
         color: skyblue;
         transition: .3s;
@@ -66,9 +51,25 @@
     }
   }
 }
+.image-box {
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  margin: 5px auto 5px;
+  background: #000;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 2px #000;
+  & img:hover {
+    opacity: .9;
+    transform-origin: 50% 50%; //アニメーション開始地点を指定する
+    transform: scale(1.05);
+    transition: .3s;
+    animation-duration: 1s; //アニメーション開始から終了までの時間を指定
+    animation-fill-mode: forwards; //アニメーション終了時の状態を固定する
+  }
+}
 .covers_profile {
   background: #fff;
-  // width: 1050px;
   margin: 10px auto;
   padding: 30px;
   color: #333;
@@ -81,17 +82,14 @@
   & p {
     margin: 8px;
     line-height: 1.8;
-    // width: 1050px;
   }
 }
 
 .covers_study_group {
   margin-top: 300px;
-  width: 80%;
-  // width: 1200px;
+  width: 90%;
   margin: auto;
   padding-bottom: 30px;
-  // background: pink;
   & h2 {
     color: rgb(6, 68, 238);
     font-size: 18px;
@@ -102,7 +100,6 @@
 
 .covers_failure {
   background: #fff;
-  // width: 1050px;
   margin: 10px auto 0;
   padding: 30px;
   color: #333;
@@ -154,25 +151,70 @@
 }
 
 // ここから1200px以下になったら変更する
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 850px) {
+
+  nav {
+    display: none;
+  }
+  .covers_portfolio-box {
+    margin: auto;
+  }
+  .covers_portfolio-box-flex-box {
+    width: 600px;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  .image-box {
+    overflow: hidden;
+    width: 500px;
+    height: 350px;
+    margin: 5px auto;
+    background: #000;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px #000;
+    & img:hover {
+      opacity: .9;
+      transform-origin: 50% 50%; //アニメーション開始地点を指定する
+      transform: scale(1.05);
+      transition: .3s;
+      animation-duration: 1s; //アニメーション開始から終了までの時間を指定
+      animation-fill-mode: forwards; //アニメーション終了時の状態を固定する
+    }
+  }
+}
+
+
+// ここから800px以下になったら変更する
+@media screen and (max-width: 650px) {  
 
 .covers_portfolio-box-flex-box {
-  width: 700px;
+  width: 450px;
   // height: 660px;
   &:hover {
     animation: none;
     opacity: .8;
   }
 }
+  
 
-
-
+.image-box {
+  overflow: hidden;
+  width: 400px;
+  height: 266px;
+  margin: 5px auto 5px;
+  background: #000;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 2px #000;
+  & img:hover {
+    opacity: .9;
+    transform-origin: 50% 50%; //アニメーション開始地点を指定する
+    transform: scale(1.05);
+    transition: .3s;
+    animation-duration: 1s; //アニメーション開始から終了までの時間を指定
+    animation-fill-mode: forwards; //アニメーション終了時の状態を固定する
+  }
 }
-
-
-// ここから800px以下になったら変更する
-@media screen and (max-width: 800px) {
-
   
 
 }
