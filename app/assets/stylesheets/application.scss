@@ -1,5 +1,7 @@
 @import "covers";
 @import "creams";
+@import "font-awesome";
+
 
 html {
   font-family: Arial, Helvetica, sans-serif,;
@@ -35,7 +37,7 @@ header::after {
 .covers_header-nav_ul {
   display: flex;
   float: right;
-  width: 500px;
+  width: 50%;
   height: 100px;
   padding: 0 10px 0 0;
   margin: 0;
@@ -89,6 +91,7 @@ header::after {
   width: 500px;
   height: 500px;
   margin: auto;
+  z-index: 1;
   & img {
     padding-left: 40px;
     animation-duration: 3s; 
